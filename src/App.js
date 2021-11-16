@@ -27,6 +27,14 @@ function App() {
             Generate
           </button>
         </form>
+        <article className="lorem-text">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil?{" "}
+          </p>
+        </article>
       </section>
     </div>
   );
