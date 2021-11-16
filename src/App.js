@@ -13,6 +13,7 @@ function App() {
         <h3>Tired of boring lorem ipsum?</h3>
         <form className="lorem-form" onSubmit={handleSubmit}>
           <label htmlFor="amount">paragraphs:</label>
+          <input type="number" name="amount" id="amount" />
         </form>
       </section>
     </div>
