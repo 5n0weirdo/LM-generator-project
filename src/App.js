@@ -23,6 +23,9 @@ function App() {
             value={count}
             onChange={handleChange}
           />
+          <button type="submit" className="btn">
+            Generate
+          </button>
         </form>
       </section>
     </div>
