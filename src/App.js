@@ -5,7 +5,8 @@ function App() {
   const [text, setText] = useState([]);
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submit");
+    let amount = parseInt(count);
+    setText(data.slice(0, amount));
   };
   const handleChange = (e) => {
     setCount(e.target.value);
@@ -28,12 +29,9 @@ function App() {
           </button>
         </form>
         <article className="lorem-text">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil?
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil?{" "}
-          </p>
+          {text.map((item, index) => {
+            return <p key={index}>{item}</p>;
+          })}
         </article>
       </section>
     </div>
