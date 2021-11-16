@@ -7,13 +7,22 @@ function App() {
     e.preventDefault();
     console.log("Submit");
   };
+  const handleChange = (e) => {
+    setCount(e.target.value);
+  };
   return (
     <div>
       <section className="section-center">
         <h3>Tired of boring lorem ipsum?</h3>
         <form className="lorem-form" onSubmit={handleSubmit}>
           <label htmlFor="amount">paragraphs:</label>
-          <input type="number" name="amount" id="amount" />
+          <input
+            type="number"
+            name="amount"
+            id="amount"
+            value={count}
+            onChange={handleChange}
+          />
         </form>
       </section>
     </div>
